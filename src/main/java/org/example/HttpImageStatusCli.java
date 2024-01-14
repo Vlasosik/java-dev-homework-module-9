@@ -17,7 +17,7 @@ public class HttpImageStatusCli {
                     System.out.println("Image download successful!");
                     break;
                 } catch (ImageException ex) {
-                    System.out.println("Here is not image for HTTP status: " + code);
+                    System.out.println("There is not image for HTTP status: " + code);
                     System.out.println("Please enter the code again to get the picture:");
                 }
             } else {
