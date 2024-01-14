@@ -18,7 +18,7 @@ public class HttpImageStatusCli {
                     break;
                 } catch (ImageException ex) {
                     System.out.println("There is not image for HTTP status: " + code);
-                    System.out.println("Please enter the code again to get the picture:");
+                    System.out.println("Please enter the code from 100 to 599 again to receive the image:");
                 }
             } else {
                 System.out.println("Please enter valid number: ");
