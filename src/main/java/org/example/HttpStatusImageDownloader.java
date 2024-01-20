@@ -14,10 +14,6 @@ import java.nio.file.Paths;
 
 public class HttpStatusImageDownloader {
     void downloadStatusImage(int code) throws ImageException {
-        String url = new HttpStatusChecker().getStatusImage(code);
-        if (url == null) {
-            throw new ImageException("Image not found for the status code: " + code);
-        }
         try {
             Files.createDirectories(Paths.get("src/main/java/org/example/img"));
             HttpClient client = HttpClient.newBuilder()
